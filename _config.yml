@@ -6,7 +6,7 @@ baseurl: ""
 url: "guidedrails.com"
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 
