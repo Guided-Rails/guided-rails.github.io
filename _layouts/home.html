@@ -2,96 +2,101 @@
 layout: default
 ---
 
-<div class="min-h-screen bg-gray-900">
-  <!-- Hero Section -->
-  <header class="relative flex items-center justify-center h-screen px-4 overflow-hidden">
-    <div class="relative z-10 max-w-4xl mx-auto text-center">
-      <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">Guided Rails</h1>
-      <p class="text-xl md:text-2xl text-gray-300 mb-10">Develop real-world coding skills with expert guidance</p>
-      <a href="mailto:{{ site.email }}" class="inline-block bg-red-700 hover:bg-red-800 text-white font-medium py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Level Up Your Skills</a>
-    </div>
-    <div class="absolute inset-0 bg-gradient-to-r from-red-900/40 to-pink-900/40 z-0"></div>
-  </header>
-
-  <!-- About Section -->
-  <section id="about" class="py-20 px-4 bg-gray-800">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-white mb-10 text-center">Build Skills That Matter</h2>
-      <div class="grid md:grid-cols-2 gap-12">
-        <div>
-          <h3 class="text-xl font-semibold text-red-400 mb-4">Beyond Tutorials and Bootcamps</h3>
-          <p class="text-gray-300 mb-6">Guided Rails bridges the gap between learning to code and becoming a professional developer. We provide personalized mentorship focused on practical skills that employers value, helping you build real applications while learning best practices from industry experts.</p>
-          <h3 class="text-xl font-semibold text-red-400 mb-4">Why Guided Rails</h3>
-          <p class="text-gray-300">Learning on your own can be challenging and inefficient. Our hands-on mentorship approach means you'll learn faster, avoid common pitfalls, and gain confidence through building real projects with expert feedback and guidance every step of the way.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-semibold text-red-400 mb-4">Skills You'll Develop</h3>
-          <ul class="text-gray-300 space-y-3">
-            <li class="flex items-start">
-              <svg class="h-6 w-6 text-red-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Professional-grade software architecture and design</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="h-6 w-6 text-red-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Testing, CI/CD, and production deployment workflows</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="h-6 w-6 text-red-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Modern frameworks and industry best practices</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="h-6 w-6 text-red-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Problem-solving and technical decision making</span>
-            </li>
-          </ul>
-        </div>
+<div class="min-h-screen bg-white">
+  <div class="max-w-3xl mx-auto px-8 py-16">
+    <!-- Header -->
+    <header class="mb-16">
+      <h1 class="text-4xl font-bold text-gray-900 mb-2">{{ site.title }}</h1>
+      <p class="text-xl text-gray-600 mb-4">{{ site.description }}</p>
+      <div class="text-gray-600">
+        <a href="mailto:{{ site.email }}" class="hover:text-gray-900">{{ site.email }}</a>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Mentorship Process Section -->
-  <section class="py-20 px-4 bg-gray-900">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-white mb-10 text-center">Our Mentorship Approach</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-gray-800 p-6 rounded-lg">
-          <div class="w-12 h-12 bg-red-700 rounded-full flex items-center justify-center mb-4 text-white font-bold">1</div>
-          <h3 class="text-xl font-semibold text-white mb-3">Skill Assessment</h3>
-          <p class="text-gray-300">We'll evaluate your current skills, identify growth areas, and create a personalized learning path focused on your career goals.</p>
+    <!-- About -->
+    <!-- <section class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-gray-200 pb-2">About</h2>
+      <p class="text-gray-700 leading-relaxed">
+        [Brief introduction about yourself, your background, and what you do]
+      </p>
+    </section> -->
+
+    <!-- Experience -->
+    <!-- <section class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-gray-200 pb-2">Experience</h2>
+
+      <div class="mb-6">
+        <div class="flex justify-between items-baseline mb-1">
+          <h3 class="text-lg font-semibold text-gray-900">[Job Title]</h3>
+          <span class="text-sm text-gray-600">[Start Date] - [End Date]</span>
         </div>
-        <div class="bg-gray-800 p-6 rounded-lg">
-          <div class="w-12 h-12 bg-red-700 rounded-full flex items-center justify-center mb-4 text-white font-bold">2</div>
-          <h3 class="text-xl font-semibold text-white mb-3">Project-Based Learning</h3>
-          <p class="text-gray-300">Work on real projects with regular code reviews, pair programming sessions, and technical guidance from experienced developers.</p>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-lg">
-          <div class="w-12 h-12 bg-red-700 rounded-full flex items-center justify-center mb-4 text-white font-bold">3</div>
-          <h3 class="text-xl font-semibold text-white mb-3">Portfolio Building</h3>
-          <p class="text-gray-300">Complete projects that demonstrate your skills to potential employers and receive guidance on technical interviews and career advancement.</p>
-        </div>
+        <p class="text-gray-700 mb-2">[Company Name]</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li>[Key responsibility or achievement]</li>
+          <li>[Key responsibility or achievement]</li>
+          <li>[Key responsibility or achievement]</li>
+        </ul>
       </div>
-    </div>
-  </section>
 
-  <!-- CTA Section -->
-  <section class="py-20 px-4 bg-gray-900 border-t border-gray-700">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Accelerate Your Development Skills?</h2>
-      <p class="text-xl text-gray-300 mb-10">We accept a limited number of mentees to ensure personalized attention. Apply today to start your journey toward becoming a professional-level developer.</p>
-      <a href="mailto:{{ site.email }}" class="inline-block bg-red-700 hover:bg-red-800 text-white font-medium py-3 px-8 rounded-lg transition duration-300">Apply for Mentorship</a>
-    </div>
-  </section>
+      <div class="mb-6">
+        <div class="flex justify-between items-baseline mb-1">
+          <h3 class="text-lg font-semibold text-gray-900">[Job Title]</h3>
+          <span class="text-sm text-gray-600">[Start Date] - [End Date]</span>
+        </div>
+        <p class="text-gray-700 mb-2">[Company Name]</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li>[Key responsibility or achievement]</li>
+          <li>[Key responsibility or achievement]</li>
+        </ul>
+      </div>
+    </section> -->
 
-  <!-- Footer -->
-  <footer class="py-10 px-4 bg-gray-800 text-center">
-    <p class="text-gray-400">© {{ 'now' | date: "%Y" }} Guided Rails LLC. All rights reserved.</p>
-  </footer>
+    <!-- Education -->
+    <!-- <section class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-gray-200 pb-2">Education</h2>
+
+      <div class="mb-4">
+        <div class="flex justify-between items-baseline mb-1">
+          <h3 class="text-lg font-semibold text-gray-900">[Degree]</h3>
+          <span class="text-sm text-gray-600">[Year]</span>
+        </div>
+        <p class="text-gray-700">[University Name]</p>
+      </div>
+    </section> -->
+
+    <!-- Projects -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-gray-200 pb-2">Projects</h2>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">
+          <a href="https://www.rhythmiq.io" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-600">rhythmiq</a>
+        </h3>
+        <p class="text-gray-700 mb-3 leading-relaxed">
+          Developed and deployed a full-stack, multi-tenant application for music instructors and students.
+        </p>
+        <p class="text-gray-700 mb-3"><strong>Key Features:</strong></p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-3">
+          <li>Built complex scheduling engine handling recurring lessons, timezone conversions, and automated conflict detection</li>
+          <li>Implemented secure payment processing with automated transaction tracking and fee distribution</li>
+          <li>Integrated Zoom API for seamless video lesson creation and participant management</li>
+          <li>Deployed using Kamal with zero-downtime deployments to DigitalOcean production environment</li>
+        </ul>
+        <p class="text-sm text-gray-600">
+          <strong>Tech Stack:</strong> Ruby on Rails, PostgreSQL, Hotwire, Tailwind CSS
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-gray-200 pb-2">Skills</h2>
+      <div class="text-gray-700">
+        <p class="mb-2"><strong>Languages:</strong> Ruby, JavaScript</p>
+        <p class="mb-2"><strong>Frameworks:</strong> Ruby on Rails, Hotwire, Tailwind CSS</p>
+        <p class="mb-2"><strong>Databases:</strong> PostgreSQL</p>
+        <p class="mb-2"><strong>Tools:</strong> Kamal, Git</p>
+      </div>
+    </section>
+  </div>
 </div>
