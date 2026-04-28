@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  {% feed_meta %}
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  {{ content }}
+<body class="bg-white text-gray-900 antialiased">
+  <main class="max-w-2xl mx-auto px-6 py-16">
+    <header class="mb-16">
+      <a href="{{ '/' | relative_url }}" class="text-sm text-gray-500 hover:text-gray-900">{{ site.title }}</a>
+    </header>
+    {{ content }}
+  </main>
 </body>
 </html>

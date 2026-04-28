@@ -2,6 +2,22 @@
 layout: default
 ---
 
-<div class="min-h-screen bg-white flex items-center justify-center">
-  <h1 class="text-5xl font-bold text-gray-900">Guided Rails</h1>
-</div>
+<section class="mb-16">
+  <h1 class="text-3xl font-semibold tracking-tight">{{ site.title }}</h1>
+  <p class="mt-2 text-gray-600">{{ site.description }}</p>
+</section>
+
+<section>
+  <ul class="space-y-6">
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url | relative_url }}" class="block group">
+          <h2 class="text-lg font-medium group-hover:underline">{{ post.title }}</h2>
+          <time datetime="{{ post.date | date_to_xmlschema }}" class="text-sm text-gray-500">
+            {{ post.date | date: "%B %-d, %Y" }}
+          </time>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
