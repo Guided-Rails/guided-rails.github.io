@@ -13,7 +13,7 @@ layout: default
       <li>
         <a href="{{ post.url | relative_url }}" class="block group">
           <h2 class="text-lg font-medium group-hover:underline">{{ post.title }}</h2>
-          <time datetime="{{ post.date | date_to_xmlschema }}" class="text-sm text-gray-500">
+          <time datetime="{{ post.date | date_to_xmlschema }}" class="text-sm text-gray-600">
             {{ post.date | date: "%B %-d, %Y" }}
           </time>
         </a>
