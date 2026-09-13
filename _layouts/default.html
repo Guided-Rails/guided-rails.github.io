@@ -12,13 +12,13 @@
 </head>
 <body class="bg-white text-gray-900 antialiased">
   <main class="max-w-2xl mx-auto px-6 py-16">
-    <header class="mb-16">
-      <a href="{{ '/' | relative_url }}" class="text-sm text-gray-600 hover:text-gray-900">{{ site.title }}</a>
+    <header class="mb-16 flex justify-between text-sm text-gray-600">
+      <a href="{{ '/' | relative_url }}" class="hover:text-gray-900">{{ site.title }}</a>
+      <a href="https://a11y-lint.guidedrails.com" class="hover:text-gray-900">a11y-lint</a>
     </header>
     {{ content }}
     <footer class="mt-16 text-sm text-gray-600">
-      <p><a href="https://a11y-lint.guidedrails.com" class="hover:text-gray-900">a11y-lint</a></p>
-      <p class="mt-2">&copy; {{ site.time | date: "%Y" }} Guided Rails, LLC. All rights reserved.</p>
+      &copy; {{ site.time | date: "%Y" }} Guided Rails, LLC. All rights reserved.
     </footer>
   </main>
 </body>
