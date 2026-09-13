@@ -1,6 +1,7 @@
 ---
 title: "Give an icon-only button an accessible name with aria-label"
 date: 2026-04-29
+redirect_from: /give-an-icon-only-button-an-accessible-name-with-aria-label/
 ---
 
 Every interactive element needs an **accessible name**: the text that assistive technology announces.
