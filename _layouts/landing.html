@@ -21,6 +21,31 @@ layout: default
   <a href="https://catberry.io" class="mt-2 inline-block text-gray-600 hover:text-gray-900 hover:underline">Visit catberry.io &rarr;</a>
 </section>
 
+<section class="mb-16">
+  <h2 class="text-lg font-medium">Gems</h2>
+  <p class="mt-2 text-gray-600">
+    Small, focused gems we use in our own Rails apps and maintain for everyone.
+  </p>
+  <div class="mt-6 rounded-lg border border-gray-200 p-6">
+    <h3 class="font-mono text-base font-medium">minitest-attributes</h3>
+    <p class="mt-2 text-gray-600">
+      Assert several attributes of an object in one call, with a clear failure message for each mismatch.
+    </p>
+    <div class="prose prose-sm mt-4 max-w-none">
+{% highlight ruby %}
+assert_attributes person,
+  first_name: "Marceline",
+  nickname: nil,
+  created_at: Time.current
+{% endhighlight %}
+    </div>
+    <div class="mt-4 flex flex-wrap gap-3 text-sm">
+      <a href="https://github.com/Guided-Rails/minitest-attributes" class="rounded-md border border-gray-300 px-3 py-1.5 hover:border-gray-900 hover:text-gray-900">GitHub</a>
+      <a href="https://rubygems.org/gems/minitest-attributes" class="rounded-md border border-gray-300 px-3 py-1.5 hover:border-gray-900 hover:text-gray-900">RubyGems</a>
+    </div>
+  </div>
+</section>
+
 <section>
   <a href="{{ '/blog/' | relative_url }}" class="text-gray-600 hover:text-gray-900 hover:underline">Read the blog &rarr;</a>
 </section>
