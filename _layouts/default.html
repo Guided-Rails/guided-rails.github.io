@@ -7,14 +7,25 @@
   <meta name="description" content="{{ page.description | default: site.description }}">
   {% feed_meta %}
   <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: "#7a1f5c"
+          }
+        }
+      }
+    }
+  </script>
   {% if jekyll.environment == "production" %}
   <script src="https://cdn.usefathom.com/script.js" data-site="FLESYFAW" defer></script>
   {% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
-<body class="bg-white text-gray-900 antialiased">
-  <main class="max-w-2xl mx-auto px-6 py-16">
+<body class="bg-white text-gray-900 antialiased flex min-h-screen flex-col">
+  <main class="flex-1 w-full max-w-2xl mx-auto px-6 py-16">
     <header class="mb-16 flex justify-between text-sm text-gray-600">
       <a href="{{ '/' | relative_url }}" class="hover:text-gray-900">{{ site.title }}</a>
       <nav class="flex gap-6">
@@ -23,9 +34,11 @@
       </nav>
     </header>
     {{ content }}
-    <footer class="mt-16 text-sm text-gray-600">
-      &copy; {{ site.time | date: "%Y" }} Guided Rails, LLC. All rights reserved.
-    </footer>
   </main>
+  <footer class="border-t-8 border-brand">
+    <div class="max-w-2xl mx-auto px-6 py-8 text-sm text-gray-600">
+      &copy; {{ site.time | date: "%Y" }} Guided Rails, LLC. All rights reserved.
+    </div>
+  </footer>
 </body>
 </html>
