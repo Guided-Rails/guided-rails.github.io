@@ -28,6 +28,24 @@ layout: default
   </p>
   <div class="mt-6 grid gap-6 md:grid-cols-2">
     <div class="flex min-w-0 flex-col rounded-lg border border-gray-200 p-6">
+      <h3 class="font-mono text-base font-medium">a11y-lint</h3>
+      <p class="mt-2 text-gray-600">
+        Catch accessibility issues in ERB and Phlex views before they ship, like images without alt text and links or buttons without an accessible name.
+      </p>
+      <div class="prose prose-sm mt-4 max-w-none">
+{% highlight console %}
+$ a11y-lint app/views
+app/views/home.html.erb:3 [ImgMissingAlt] img tag is missing an alt attribute (WCAG 1.1.1)
+1 offense found
+{% endhighlight %}
+      </div>
+      <div class="mt-auto flex flex-wrap gap-3 pt-4 text-sm">
+        <a href="https://github.com/Guided-Rails/a11y-lint" class="rounded-md border border-gray-300 px-3 py-1.5 hover:border-gray-900 hover:text-gray-900">GitHub</a>
+        <a href="https://rubygems.org/gems/a11y-lint" class="rounded-md border border-gray-300 px-3 py-1.5 hover:border-gray-900 hover:text-gray-900">RubyGems</a>
+        <a href="https://a11y-lint.guidedrails.com/" class="rounded-md border border-gray-300 px-3 py-1.5 hover:border-gray-900 hover:text-gray-900">Documentation</a>
+      </div>
+    </div>
+    <div class="flex min-w-0 flex-col rounded-lg border border-gray-200 p-6">
       <h3 class="font-mono text-base font-medium">minitest-attributes</h3>
       <p class="mt-2 text-gray-600">
         Assert several attributes of an object in one call, with a clear failure message for each mismatch.
