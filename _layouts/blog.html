@@ -2,22 +2,24 @@
 layout: default
 ---
 
-<section class="mb-16">
-  <h1 class="text-3xl font-semibold tracking-tight">{{ page.title }}</h1>
-  <p class="mt-2 text-gray-600">{{ site.description }}</p>
-</section>
+<div class="relative left-1/2 w-[min(100vw_-_3rem,80rem)] -translate-x-1/2">
+  <section class="prose mb-16">
+    <h1>{{ page.title }}</h1>
+    <p>{{ site.description }}</p>
+  </section>
 
-<section>
-  <ul class="space-y-6">
-    {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url | relative_url }}" class="block group">
-          <h2 class="text-lg font-medium group-hover:underline">{{ post.title }}</h2>
-          <time datetime="{{ post.date | date_to_xmlschema }}" class="text-sm text-gray-600">
-            {{ post.date | date: "%B %-d, %Y" }}
-          </time>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+  <section>
+    <ul class="space-y-6">
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url | relative_url }}" class="block group">
+            <h2 class="text-lg font-medium group-hover:underline">{{ post.title }}</h2>
+            <time datetime="{{ post.date | date_to_xmlschema }}" class="text-sm text-gray-600">
+              {{ post.date | date: "%B %-d, %Y" }}
+            </time>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
