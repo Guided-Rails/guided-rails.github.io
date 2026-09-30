@@ -63,5 +63,24 @@ expect(page).to be_axe_clean.checking_only(:color_contrast)
         <a href="https://rubygems.org/gems/axe-cuprite" class="rounded-md border border-gray-300 px-3 py-1.5 hover:border-gray-900 hover:text-gray-900">RubyGems</a>
       </div>
     </div>
+    <div class="flex min-w-0 flex-col rounded-lg border border-gray-200 p-6">
+      <div class="flex items-center gap-3">
+        <h3 class="font-mono text-base font-medium">uthmani_text_size</h3>
+        <span class="rounded-full border border-gray-300 px-2 py-0.5 text-xs text-gray-600">Archived</span>
+      </div>
+      <p class="mt-2 text-gray-600">
+        Count the letters in Uthmani Arabic text, ignoring the diacritics and marks that <code>String#size</code> counts as separate characters.
+      </p>
+      <div class="prose prose-sm mt-4 max-w-none">
+{% highlight ruby %}
+"ٱلرَّحْمَٰنِ".size          # => 12
+"ٱلرَّحْمَٰنِ".uthmani_size  # => 6
+{% endhighlight %}
+      </div>
+      <div class="mt-auto flex flex-wrap gap-3 pt-4 text-sm">
+        <a href="https://github.com/Guided-Rails/uthmani_text_size" class="rounded-md border border-gray-300 px-3 py-1.5 hover:border-gray-900 hover:text-gray-900">GitHub</a>
+        <a href="https://rubygems.org/gems/uthmani_text_size" class="rounded-md border border-gray-300 px-3 py-1.5 hover:border-gray-900 hover:text-gray-900">RubyGems</a>
+      </div>
+    </div>
   </div>
 </section>
