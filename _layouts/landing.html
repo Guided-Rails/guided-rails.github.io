@@ -7,9 +7,22 @@ layout: default
   <p class="mt-2 text-gray-600">{{ site.description }}</p>
 </section>
 
-<section class="mb-16">
+<section class="relative left-1/2 mb-16 w-[min(100vw_-_3rem,80rem)] -translate-x-1/2">
   <h2 class="text-lg font-medium">Services</h2>
-  <p class="mt-2 text-gray-600">Coming soon.</p>
+  <p class="mt-2 text-gray-600">
+    Hands-on help for Rails teams.
+  </p>
+  <div class="mt-6 grid gap-6 md:grid-cols-2">
+    <div class="flex min-w-0 flex-col rounded-lg border border-gray-200 p-6">
+      <h3 class="text-base font-medium">Accessibility audits</h3>
+      <p class="mt-2 text-gray-600">
+        We review your Rails app against WCAG with a keyboard and a screen reader, then hand you a prioritized list of fixes pointing at the views and components that need them.
+      </p>
+      <div class="mt-auto flex flex-wrap gap-3 pt-4 text-sm">
+        <a href="mailto:{{ site.email }}?subject=Accessibility%20audit" class="rounded-md border border-gray-300 px-3 py-1.5 hover:border-gray-900 hover:text-gray-900">Get in touch</a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="relative left-1/2 mb-16 w-[min(100vw_-_3rem,80rem)] -translate-x-1/2">
