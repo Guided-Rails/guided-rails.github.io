@@ -39,7 +39,10 @@
   <footer class="border-t-8 border-brand">
     <div class="mx-auto flex w-[min(100vw_-_3rem,80rem)] justify-between gap-6 py-8 text-sm text-gray-600">
       <span>&copy; {{ site.time | date: "%Y" }} Guided Rails, LLC. All rights reserved.</span>
-      <a href="{{ '/privacy/' | relative_url }}" class="hover:text-gray-900">Privacy</a>
+      <nav class="flex gap-6">
+        <a href="{{ '/license/' | relative_url }}" class="hover:text-gray-900">License</a>
+        <a href="{{ '/privacy/' | relative_url }}" class="hover:text-gray-900">Privacy</a>
+      </nav>
     </div>
   </footer>
 </body>
