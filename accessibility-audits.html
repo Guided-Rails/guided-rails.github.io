@@ -1,0 +1,79 @@
+---
+layout: default
+title: Accessibility audits
+description: A free accessibility audit for your Rails app, with every finding traced back to the view, partial, helper, or component that needs the fix.
+permalink: /accessibility-audits/
+---
+
+<div class="relative left-1/2 w-[min(100vw_-_3rem,80rem)] -translate-x-1/2">
+<section class="mb-16">
+  <h1 class="max-w-3xl text-4xl font-semibold tracking-tight md:text-5xl">A free accessibility audit for your Rails app.</h1>
+  <p class="mt-6 max-w-2xl text-lg text-gray-600">
+    We use your app the way a keyboard or screen reader user does, then tell you what's broken and where to fix it in your code: the view, partial, helper, or component. You don't get a URL and a CSS selector you have to trace back yourself.
+  </p>
+  <a href="mailto:{{ site.email }}?subject=Free%20accessibility%20audit" class="mt-8 inline-block rounded-md bg-brand px-4 py-2 text-white hover:bg-brand/90">Request an audit</a>
+</section>
+
+<section class="mb-16 max-w-2xl">
+  <h2 class="text-2xl font-semibold tracking-tight">Why it's free</h2>
+  <div class="mt-4 space-y-4 text-gray-600">
+    <p>
+      A manual accessibility audit usually costs a few thousand dollars, and that's before anyone fixes anything. Plenty of teams never get one, so they never find out what's wrong.
+    </p>
+    <p>
+      We'd rather you find out. Auditing Rails apps also shows us which accessibility mistakes are common, and those become the posts on our blog. If you want help with the fixes afterward, we'd be glad to do it, but you don't have to hire us. The report is yours either way.
+    </p>
+  </div>
+</section>
+
+<section class="mb-16 max-w-2xl">
+  <h2 class="text-2xl font-semibold tracking-tight">What we test</h2>
+  <p class="mt-4 text-gray-600">
+    You pick up to three flows that matter most, like signing up, checking out, or whatever your users do every day. We test each one against WCAG 2.2 AA:
+  </p>
+  <ul class="mt-4 list-disc space-y-2 pl-6 text-gray-600">
+    <li><strong class="font-medium text-gray-900">Keyboard only.</strong> Can you reach and use everything without a mouse? Can you see where focus is? Do modals and menus trap focus or lose it?</li>
+    <li><strong class="font-medium text-gray-900">With VoiceOver.</strong> Do buttons, links, and form fields announce what they are? Are errors and Turbo updates announced? Do headings and landmarks make the page easy to navigate?</li>
+    <li><strong class="font-medium text-gray-900">Visual checks.</strong> Color contrast, zooming to 200%, text spacing, and anything that relies on color alone.</li>
+    <li><strong class="font-medium text-gray-900">Automated scans.</strong> To catch what a tool can find quickly, so we can spend our time on what it can't.</li>
+  </ul>
+</section>
+
+<section class="mb-16 max-w-2xl">
+  <h2 class="text-2xl font-semibold tracking-tight">What you get</h2>
+  <ul class="mt-4 list-disc space-y-2 pl-6 text-gray-600">
+    <li><strong class="font-medium text-gray-900">A prioritized list of issues.</strong> Most important first: anything that stops someone from finishing a flow, then anything that makes it harder.</li>
+    <li><strong class="font-medium text-gray-900">The code to change.</strong> Each issue shows the fix in ERB or Phlex. If you share read access to your repo, we point at the exact file and line.</li>
+    <li><strong class="font-medium text-gray-900">Fixes grouped by source.</strong> When one shared partial or helper causes the same problem on 40 pages, you see it as one fix, not 40 issues.</li>
+    <li><strong class="font-medium text-gray-900">How to keep it fixed.</strong> Suggestions for system tests and lint checks, so the same issues don't come back.</li>
+    <li><strong class="font-medium text-gray-900">A call to go through it.</strong> About 30 minutes with your team to walk through the findings and answer questions.</li>
+  </ul>
+</section>
+
+<section class="mb-16 max-w-2xl">
+  <h2 class="text-2xl font-semibold tracking-tight">How it works</h2>
+  <ol class="mt-4 list-decimal space-y-2 pl-6 text-gray-600">
+    <li>Email us your app's URL and the flows you want tested. If they're behind a login, include a test account.</li>
+    <li>If you can, give us read access to the repo. It's optional, but it makes the findings much more specific.</li>
+    <li>We test and write up the findings, usually within two weeks.</li>
+    <li>We go through the report together on a call.</li>
+  </ol>
+</section>
+
+<section class="mb-16 max-w-2xl">
+  <h2 class="text-2xl font-semibold tracking-tight">What it isn't</h2>
+  <ul class="mt-4 list-disc space-y-2 pl-6 text-gray-600">
+    <li><strong class="font-medium text-gray-900">It's not a compliance certificate.</strong> We don't produce a VPAT or an Accessibility Conformance Report, and we can't give legal advice. The audit covers the flows you choose, not your whole app.</li>
+    <li><strong class="font-medium text-gray-900">It's not an overlay.</strong> We won't sell you a widget that promises to fix everything with one script tag. Accessibility gets fixed in your views.</li>
+    <li><strong class="font-medium text-gray-900">It's only for Rails.</strong> We work only on Rails apps, which is why we can point at your code.</li>
+  </ul>
+</section>
+
+<section class="max-w-2xl rounded-lg border border-gray-200 p-6">
+  <h2 class="text-lg font-medium">Want an audit?</h2>
+  <p class="mt-2 text-gray-600">
+    We take on a few audits each month so each one gets real attention. Send us your app and the flows you care about.
+  </p>
+  <a href="mailto:{{ site.email }}?subject=Free%20accessibility%20audit" class="mt-4 inline-block rounded-md bg-brand px-4 py-2 text-white hover:bg-brand/90">Request an audit</a>
+</section>
+</div>
