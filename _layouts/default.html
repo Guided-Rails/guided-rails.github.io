@@ -25,14 +25,15 @@
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body class="bg-white text-gray-900 antialiased flex min-h-screen flex-col">
-  <main class="flex-1 w-full max-w-2xl mx-auto px-6 py-16">
-    <header class="mb-16 flex justify-between text-sm text-gray-600">
-      <a href="{{ '/' | relative_url }}" class="hover:text-gray-900">{{ site.title }}</a>
-      <nav class="flex gap-6">
+  <header class="border-t-8 border-brand">
+    <div class="mx-auto flex w-[min(100vw_-_3rem,80rem)] items-center justify-between py-6">
+      <a href="{{ '/' | relative_url }}" class="text-lg font-semibold tracking-tight text-brand">{{ site.title }}</a>
+      <nav class="flex gap-6 text-sm text-gray-600">
         <a href="{{ '/blog/' | relative_url }}" class="hover:text-gray-900">Blog</a>
-        <a href="https://a11y-lint.guidedrails.com" class="hover:text-gray-900">a11y-lint</a>
       </nav>
-    </header>
+    </div>
+  </header>
+  <main class="flex-1 w-full max-w-2xl mx-auto px-6 py-16">
     {{ content }}
   </main>
   <footer class="border-t-8 border-brand">
